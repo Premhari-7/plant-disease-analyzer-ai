@@ -134,6 +134,26 @@ pip install -r requirements.txt
 4. TensorFlow model processes the image.
 5. Predicted disease result is returned to frontend.
 
+
+---
+
+## 🤖 Smart AI Chatbot (Powered by Groq API)
+
+One of the key highlights of this project is the integrated AI chatbot powered by the Groq API.
+
+### 🌟 Key Features:
+
+- 🌿 Answers plant-related questions
+- 🦠 Provides disease prevention tips
+- 💡 Suggests remedies and care instructions
+- 🌍 Supports multiple languages
+- 💬 General AI conversational ability
+- ⚡ Real-time response generation
+
+The chatbot enhances user experience by providing intelligent agricultural guidance alongside disease prediction.
+
+> 🔐 The API key is securely stored using environment variables (.env) and is not included in this repository.
+
 ---
 
 ## 🛠 Technologies Used
@@ -156,6 +176,16 @@ pip install -r requirements.txt
 This project is licensed under the MIT License.
 
 ---
+
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](assets/Home.png)
+
+### 🔍 Chatbot Page
+![Chatbot Result](assets/Chatbot.png)
+
 
 ## 👨‍💻 Author
 
