@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.h5
+*.log
+__pycache__/
+dist/
+build/

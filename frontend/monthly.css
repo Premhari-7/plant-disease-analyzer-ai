@@ -1,0 +1,114 @@
+/* ================= MONTHLY MAIN ================= */
+.monthly-main {
+    position: relative;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* 🌌 Background image */
+.monthly-main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("images/wallhaven-eyyq7k.jpg") center/cover no-repeat;
+
+    filter: brightness(0.55);   /* ⭐ darker for contrast */
+    z-index: 0;
+}
+
+/* ⭐ Dark overlay for readability */
+.monthly-main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(
+        circle at center,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.75)
+    );
+
+    z-index: 0;
+}
+
+/* ================= GRAPH CARD ================= */
+.graph-wrapper {
+    position: relative;
+    z-index: 1;
+
+    width: 90%;
+    max-width: 920px;
+
+    padding: 40px;
+
+    /* ⭐ Dark glass instead of white glass */
+    background: rgba(15, 23, 42, 0.65);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 26px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.75),
+        inset 0 0 30px rgba(255,255,255,0.05);
+
+    animation: fadeUp 0.8s cubic-bezier(.2,.8,.2,1);
+}
+
+/* ✨ Entrance animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ================= SIDEBAR ACTIVE ================= */
+.sidebar .active {
+    background: #22c55e;
+    color: #020617;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* ================= GRAPH TEXT ================= */
+
+.graph-wrapper h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.graph-desc {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #e5e7eb;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .graph-wrapper {
+        padding: 24px;
+    }
+
+}

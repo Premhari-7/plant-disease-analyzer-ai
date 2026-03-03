@@ -1,0 +1,33 @@
+{
+  "tomato late blight": {
+    "info": "Late blight is a serious fungal disease affecting tomato plants.",
+    "symptoms": "Dark brown spots on leaves, white mold under leaves.",
+    "cure": "Apply copper-based fungicide. Remove infected plants.",
+    "fertilizer": "Use potassium-rich fertilizer. Avoid excess nitrogen.",
+    "prevention": "Avoid overhead watering and ensure air circulation."
+  },
+
+  "tomato leaf mold": {
+    "info": "Leaf mold occurs in humid conditions, mainly in tomatoes.",
+    "symptoms": "Yellow spots on upper leaf surface, mold underneath.",
+    "cure": "Reduce humidity and apply fungicide.",
+    "fertilizer": "Balanced NPK fertilizer (10-10-10).",
+    "prevention": "Grow resistant varieties and ventilate greenhouse."
+  },
+
+  "potato early blight": {
+    "info": "Early blight is a fungal disease affecting potato leaves.",
+    "symptoms": "Brown concentric rings on leaves.",
+    "cure": "Remove infected leaves and apply fungicide.",
+    "fertilizer": "Apply phosphorus-rich fertilizer.",
+    "prevention": "Crop rotation and proper spacing."
+  },
+
+  "உருளைக்கிழங்கு எர்லி பிளைட்": {
+    "info": "உருளைக்கிழங்கில் ஏற்படும் ஒரு பூஞ்சை நோய்.",
+    "symptoms": "இலைகளில் பழுப்பு நிற வளையங்கள்.",
+    "cure": "பாதிக்கப்பட்ட இலைகளை அகற்றி பூஞ்சை மருந்து பயன்படுத்தவும்.",
+    "fertilizer": "பாஸ்பரஸ் அதிகமான உரம் பயன்படுத்தவும்.",
+    "prevention": "பயிர் சுழற்சி மற்றும் சரியான இடைவெளி."
+  }
+}

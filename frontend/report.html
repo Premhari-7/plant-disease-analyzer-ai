@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Report</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <ul>
+            <li onclick="location.href='index.html'">
+                <i class="fa-solid fa-house"></i><span>Home</span>
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-chart-column"></i><span>Disease Report</span>
+            </li>
+
+            <li onclick="location.href='monthly.html'">
+                <i class="fa-solid fa-calendar-days"></i><span>Monthly Analysis</span>
+            </li>
+
+            <li onclick="location.href='chatbot.html'">
+                <i class="fa-solid fa-robot"></i><span>Chatbot</span>
+            </li>
+
+            <li onclick="location.href='about.html'">
+                <i class="fa-solid fa-circle-info"></i><span>About</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <img src="images/wallhaven-4d3emg.jpg" class="bg-image">
+
+        <div class="card">
+            <h1>
+                <i class="fa-solid fa-file-medical"></i>
+                Disease Report
+            </h1>
+
+            <table border="1" width="100%" cellpadding="10">
+                <tr>
+                    <th>Disease</th>
+                    <th>Count</th>
+                </tr>
+                <tbody id="reportTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<script>
+fetch("http://127.0.0.1:5000/report")
+.then(res => res.json())
+.then(data => {
+    let table = document.getElementById("reportTable");
+    table.innerHTML = "";
+
+    for (let key in data) {
+        table.innerHTML += `
+            <tr>
+                <td>${key}</td>
+                <td>${data[key]}</td>
+            </tr>
+        `;
+    }
+});
+</script>
+
+</body>
+</html>

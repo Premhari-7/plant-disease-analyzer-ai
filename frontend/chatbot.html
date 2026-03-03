@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Plant Disease Chatbot</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/chatbot.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR (UNCHANGED) -->
+    <div class="sidebar">
+        <ul>
+            <li onclick="location.href='index.html'">
+                <i class="fa-solid fa-house"></i><span>Home</span>
+            </li>
+
+            <li onclick="location.href='report.html'">
+                <i class="fa-solid fa-chart-column"></i><span>Disease Report</span>
+            </li>
+
+            <li onclick="location.href='monthly.html'">
+                <i class="fa-solid fa-calendar-days"></i><span>Monthly Analysis</span>
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-robot"></i><span>Chatbot</span>
+            </li>
+
+            <li onclick="location.href='about.html'">
+                <i class="fa-solid fa-circle-info"></i><span>About</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN AREA -->
+    <div class="main">
+
+        <div class="chatbot-card">
+
+            <!-- Header -->
+            <div class="chat-header">
+                <i class="fa-solid fa-robot"></i>
+                <h2>Plant Disease Chatbot</h2>
+            </div>
+
+            <!-- Chat Area -->
+            <div id="pdChatBox" class="chat-area">
+
+                <div class="message bot">
+                    Hello! Ask me about plant diseases 🌿
+                </div>
+
+            </div>
+
+            <!-- Input -->
+            <div class="chat-input">
+                <input type="text" id="pdUserInput"
+                       placeholder="Ask about plant diseases...">
+                <button onclick="sendChat()">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
