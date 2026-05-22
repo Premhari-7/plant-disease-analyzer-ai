@@ -14,7 +14,7 @@
 
 <img src="https://img.shields.io/github/stars/Premhari-7/plant-disease-analyzer-ai?style=for-the-badge&color=4CAF50"/>
 <img src="https://img.shields.io/github/forks/Premhari-7/plant-disease-analyzer-ai?style=for-the-badge&color=2E7D32"/>
-<img src="https://img.shields.io/github/license/Premhari-7/plant-disease-analyzer-ai?style=for-the-badge&color=1B5E20"/>
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 
 </div>
 
