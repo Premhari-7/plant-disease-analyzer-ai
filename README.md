@@ -1,112 +1,163 @@
-# 🌿 Plant Disease Analyzer (AI + ML)
+<div align="center">
 
-## 📌 Overview
-Plant Disease Analyzer is a web-based AI application that detects plant leaf diseases using a trained deep learning model built with TensorFlow and Keras.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:134E5E,100:71B280&height=250&section=header&text=Plant%20Disease%20Analyzer%20AI&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38" />
 
-This system allows users to upload a leaf image and receive a disease prediction instantly.
+<br>
 
----
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=28&duration=3000&pause=1000&color=71B280&center=true&vCenter=true&width=850&lines=AI+Powered+Plant+Disease+Detection;Deep+Learning+%2B+Groq+AI+Assistant;Modern+Agriculture+with+Artificial+Intelligence" />
 
-## 🎯 Features
--  Upload plant leaf images
--  AI-based disease prediction
--  Clean and responsive frontend
--  Node.js backend integration
--  Flask-based ML prediction API
--  Real-time classification
+<br><br>
 
----
+<img src="https://skillicons.dev/icons?i=python,tensorflow,flask,nodejs,js,html,css,vscode,github" />
 
-## 🧠 Model Details
+<br><br>
 
-The deep learning model was trained using a **subset** of the PlantVillage dataset.
+<img src="https://img.shields.io/github/stars/Premhari-7/plant-disease-analyzer-ai?style=for-the-badge&color=4CAF50" />
+<img src="https://img.shields.io/github/forks/Premhari-7/plant-disease-analyzer-ai?style=for-the-badge&color=2E7D32" />
+<img src="https://img.shields.io/github/license/Premhari-7/plant-disease-analyzer-ai?style=for-the-badge&color=1B5E20" />
 
-### Classes Supported:
-- Healthy
-- Potato Early Blight
-- Tomato Late Blight
-- Tomato Leaf Mold
-
-> Note: This project is trained only on selected classes, not the full dataset.
+</div>
 
 ---
 
-## 📂 Project Structure
-plant-disease-analyzer-ai/
-│
-├── backend/
-│ ├── server.js
-│ ├── app.py
-│ └── requirements.txt
-│
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-│
-├── dataset/ (Not included in repository)
-└── README.md
+# Plant Disease Analyzer AI
+
+Plant Disease Analyzer AI is a modern AI-powered web application that predicts plant leaf diseases using Deep Learning and Computer Vision.
+
+The system combines:
+- TensorFlow Deep Learning
+- Flask AI API
+- Node.js Backend
+- Groq AI Chatbot
+- Responsive Frontend Design
+
+to provide intelligent agricultural assistance and real-time disease prediction.
 
 ---
 
-## 📊 Dataset Information
+<div align="center">
 
-The model was trained using the PlantVillage dataset.
+## AI + Web Technologies
 
-Due to GitHub size limitations, the dataset is not included in this repository.
+<img src="https://skillicons.dev/icons?i=python,tensorflow,flask,nodejs,js,html,css" />
 
-You can download it from:
+<br><br>
+
+<img src="https://img.shields.io/badge/DeepLearning-TensorFlow-2E7D32?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/Backend-Node.js-1B5E20?style=for-the-badge&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/API-Flask-388E3C?style=for-the-badge&logo=flask&logoColor=white" />
+<img src="https://img.shields.io/badge/AI-Groq-4CAF50?style=for-the-badge" />
+
+</div>
+
+---
+
+# Features
+
+```txt
+AI-based disease prediction
+Plant leaf image upload
+Real-time classification
+Groq AI chatbot integration
+Responsive frontend interface
+Multi-language AI support
+Flask API architecture
+TensorFlow model prediction
+```
+
+---
+
+# AI Chatbot
+
+Integrated with **Groq API** for smart agricultural assistance.
+
+Capabilities:
+- Plant care guidance
+- Disease prevention suggestions
+- AI-generated remedies
+- Multi-language conversations
+- Real-time intelligent responses
+
+---
+
+# Disease Classes
+
+```txt
+Healthy
+Potato Early Blight
+Tomato Late Blight
+Tomato Leaf Mold
+```
+
+---
+
+# Tech Stack
+
+<div align="center">
+
+| Technology | Usage |
+|------------|-------|
+| Python | AI / Backend |
+| TensorFlow | Deep Learning |
+| Flask | AI API |
+| Node.js | Backend Server |
+| JavaScript | Frontend Logic |
+| HTML/CSS | UI Design |
+| Groq API | AI Chatbot |
+
+</div>
+
+---
+
+# Dataset
+
+Model trained using:
+
+## PlantVillage Dataset
+
 https://www.kaggle.com/datasets/emmarex/plantdisease
 
-After downloading, place the dataset inside:
-
-dataset/
-├── train/
-└── test/
-
 ---
 
-## ⚙ Installation Guide
+# Installation
 
-### 1️⃣ Clone Repository
+## Clone Repository
 
-
+```bash
 git clone https://github.com/Premhari-7/plant-disease-analyzer-ai.git
 
 cd plant-disease-analyzer-ai
-
+```
 
 ---
 
-## 🖥 Backend Setup (Node.js)
+## Backend Setup
 
-Open Terminal 1:
-
-
+```bash
 cd backend
+
 npm install
+
 node server.js
-
+```
 
 ---
 
-## 🧠 AI Model Server (Python Flask)
+## AI Server Setup
 
-Open Terminal 2:
-
-
+```bash
 cd backend
-pip install -r requirements.txt
-python app.py
 
+pip install -r requirements.txt
+
+python app.py
+```
 
 ---
 
-## 📦 Required Python Packages
+# Required Python Packages
 
-Create a file named `requirements.txt` inside backend folder:
-
-
+```txt
 tensorflow
 keras
 numpy
@@ -114,81 +165,55 @@ pandas
 flask
 flask-cors
 pillow
-scikit-learn
 opencv-python
-
-
-Install using:
-
-
-pip install -r requirements.txt
-
+scikit-learn
+```
 
 ---
 
-## 🚀 How It Works
+# Project Workflow
 
-1. User uploads an image from frontend.
-2. Image is sent to Node.js backend.
-3. Backend forwards image to Flask ML server.
-4. TensorFlow model processes the image.
-5. Predicted disease result is returned to frontend.
-
-
----
-
-## 🤖 Smart AI Chatbot (Powered by Groq API)
-
-One of the key highlights of this project is the integrated AI chatbot powered by the Groq API.
-
-### 🌟 Key Features:
-
-- 🌿 Answers plant-related questions
-- 🦠 Provides disease prevention tips
-- 💡 Suggests remedies and care instructions
-- 🌍 Supports multiple languages
-- 💬 General AI conversational ability
-- ⚡ Real-time response generation
-
-The chatbot enhances user experience by providing intelligent agricultural guidance alongside disease prediction.
-
-> 🔐 The API key is securely stored using environment variables (.env) and is not included in this repository.
+```txt
+1. Upload plant leaf image
+2. Image sent to backend
+3. Flask AI API receives image
+4. TensorFlow model predicts disease
+5. Result displayed instantly
+6. Groq AI chatbot provides guidance
+```
 
 ---
 
-## 🛠 Technologies Used
+# Project Preview
 
-- HTML
-- CSS
-- JavaScript
-- Node.js
-- Python
-- Flask
-- TensorFlow / Keras
-- NumPy
-- Pandas
-- OpenCV
+<div align="center">
 
----
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Premhari-7&theme=github_dark" />
 
-## 📄 License
+<br><br>
 
-This project is licensed under the MIT License.
+<img src="https://github-readme-streak-stats.herokuapp.com?user=Premhari-7&theme=tokyonight&hide_border=true" />
+
+<br><br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:134E5E,100:71B280&height=120&section=footer" />
+
+</div>
 
 ---
 
+<div align="center">
 
-## 📸 Screenshots
+# Developer
 
-### 🏠 Home Page
-![Home Page](assets/Home.png)
+### Prem Hari S
 
-### 🔍 Chatbot Page
-![Chatbot Result](assets/Chatbot.png)
+Full-Stack Developer • AI Enthusiast • UI Designer
 
+<img src="https://skillicons.dev/icons?i=github,vscode,python,nodejs,tensorflow" />
 
-## 👨‍💻 Author
+<br><br>
 
-**Prem Hari S**  
-GitHub: https://github.com/Premhari-7
+Made with Deep Learning and modern web technologies.
 
+</div>
