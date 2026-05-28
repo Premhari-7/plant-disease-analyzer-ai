@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: plant-disease-chatbot
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
