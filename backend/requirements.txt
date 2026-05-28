@@ -1,6 +1,8 @@
 Flask
 Flask-Cors
-tensorflow==2.15.0
-numpy
+tensorflow==2.16.1
+keras==3.3.3
+h5py==3.11.0
+numpy==1.26.4
 Pillow
 requests

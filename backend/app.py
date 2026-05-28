@@ -6,12 +6,13 @@ import json
 from PIL import Image
 import io
 import requests   # connect to Node AI server
+from keras.models import load_model
 
 app = Flask(__name__)
 CORS(app)
 
 # ---------------- LOAD IMAGE MODEL ----------------
-model = tf.keras.models.load_model("model.h5")
+model = load_model("model.h5", compile=False)
 
 class_names = [
     "Healthy",
