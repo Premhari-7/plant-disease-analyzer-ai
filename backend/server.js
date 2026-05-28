@@ -45,6 +45,7 @@ app.post("/chatbot-ai", async (req, res) => {
   }
 });
 
-app.listen(5001, () => {
-  console.log("AI Server running on port 5001 !!");
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => {
+  console.log(`AI Server running on port ${PORT} !!`);
 });
