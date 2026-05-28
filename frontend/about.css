@@ -112,12 +112,20 @@
 /* 📱 Responsive */
 @media (max-width: 768px) {
 
+    .about-main {
+        padding: 15px;
+        padding-bottom: 90px;
+    }
+
     .glass-card {
-        padding: 28px 24px;
+        width: 100%;
+        max-width: 100%;
+        padding: 24px 20px;
+        border-radius: 20px;
     }
 
     .glass-card h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .glass-card h3 {

@@ -107,8 +107,25 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
+    .monthly-main {
+        padding: 15px;
+        padding-bottom: 90px;
+    }
+
     .graph-wrapper {
-        padding: 24px;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .graph-wrapper h2 {
+        font-size: 22px;
+    }
+
+    .graph-desc {
+        font-size: 13px;
+        margin-bottom: 20px;
     }
 
 }
