@@ -1,3 +1,9 @@
+/* ================= CONFIGURATION ================= */
+// ⚠️ IMPORTANT: Replace these URLs with your actual Render deployment URLs once deployed!
+// For local testing, use the 127.0.0.1 URLs instead.
+const API_URL_PYTHON = "https://your-python-api-url.onrender.com"; 
+const API_URL_NODE = "https://your-node-api-url.onrender.com";
+
 /* ================= IMAGE ANALYSIS (DO NOT CHANGE) ================= */
 function analyzeImage() {
     const input = document.getElementById("imageInput");
@@ -13,7 +19,7 @@ function analyzeImage() {
 
     result.innerHTML = "Analyzing... ⏳";
 
-    fetch("http://127.0.0.1:5000/predict", {
+    fetch(`${API_URL_PYTHON}/predict`, {
         method: "POST",
         body: formData
     })
@@ -93,7 +99,7 @@ function sendChat() {
     loadingDiv.innerText = "Thinking... 🤖";
     chatBox.appendChild(loadingDiv);
 
-    fetch("http://127.0.0.1:5001/chatbot-ai", {
+    fetch(`${API_URL_NODE}/chatbot-ai`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
